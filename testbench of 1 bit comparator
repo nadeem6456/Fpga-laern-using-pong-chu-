@@ -1,0 +1,47 @@
+module eq2_testbench;
+reg [1:0] test_in0, test_in1;
+wire test_out;
+eq2 uut
+(.a(test-inO), .b(test-inl), .aeqb(test-out)); 
+initial 
+begin 
+// test vector 1 
+test-in0 = 2'bOO; 
+test-in1 = 2'bOO; 
+# 
+200; 
+// lest vector 2 
+test-in0 = 2'bOl; 
+test-in1 = 2'bOO; 
+# 
+200; 
+// test vector 3 
+test-in0 = 2'bOl; 
+test-in1 = 2'bll; 
+# 
+200; 
+// test vector 4 
+test-in0 = 2'blO; 
+test-in1 = 2'blO; 
+# 
+200; 
+// test vector 5 
+test-in0 = 2'blO; 
+test-in1 = 2'bOO; 
+# 
+200; 
+// test vector 6 
+test-in0 = 2'bll; 
+test-in1 = 2'bll;
+# 
+200; 
+// test vector 7 
+test-in0 = 2'bll; 
+test-in1 = 2'bOl; 
+45 
+# 
+200; 
+// stop simulation 
+$stop ; 
+end 
+endmodule
