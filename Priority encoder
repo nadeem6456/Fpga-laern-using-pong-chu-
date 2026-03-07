@@ -1,0 +1,8 @@
+module prio-encoder-if 
+(
+input wire [4:1] r,
+output reg [2:0] y
+);
+always @
+ 
+
