@@ -1,0 +1,26 @@
+odule prio-encoder-case 
+( 
+input wire C4: 11 r, 
+output reg [2:01 y 
+); 
+always Q* 
+case (r) 
+4'b1000, 4'b1001, 4'b1010, 4'b1011, 
+4'b1100, 4'b1101, 4'b1110, 4'bllll: 
+y 
+= 3'blOO; 
+4'b0100, 4'b0101, 4'b0110, 4'bOlll: 
+y 
+= 3'bOll; 
+4'b0010, 4'bOOll: 
+y 
+= 3'bOlO; 
+4'bOOOl: 
+y 
+= 3'bOOl; 
+4 ' boo00 : 
+y 
+// default can also be used 
+= 3'bOOO; 
+endcase 
+endmodule 
