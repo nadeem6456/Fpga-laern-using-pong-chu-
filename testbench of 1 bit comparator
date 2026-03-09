@@ -20,7 +20,7 @@ test-in0 = 2'bOl;
 test-in1 = 2'bll; 
 # 
 200; 
-// test vector 4 
+// test vector 4 is y cahnge
 test-in0 = 2'blO; 
 test-in1 = 2'blO; 
 # 
